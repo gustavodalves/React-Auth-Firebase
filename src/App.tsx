@@ -1,9 +1,9 @@
-import SignIn from './pages/SignIn'
+import Auth from './pages/Auth'
 import './services/firebase'
 
 function App() {
     return(
-        <SignIn />
+        <Auth />
     )
 }
 

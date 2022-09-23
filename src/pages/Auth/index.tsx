@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 
 import '../../styles/Global.css'
 
-function SignIn() {
+function Auth() {
     const [ authType, setAuthType ] = useState('signIn');
     const { authenticate, login, createCredentials } = useAuth();
     const { register, handleSubmit } = useForm();
@@ -36,4 +36,4 @@ function SignIn() {
     )
 }
 
-export default SignIn
+export default Auth;
